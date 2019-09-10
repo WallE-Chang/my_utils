@@ -1,4 +1,5 @@
 import requests
+from bs4 import BeautifulSoup
 def get_phone_location(phone_number):
     base_url = 'http://shouji.xpcha.com/{}.html'
     url = base_url.format(phone_number)
